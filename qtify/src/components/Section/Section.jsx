@@ -8,7 +8,7 @@ const Section = () => {
 const [topAlbums, setTopAlbums] = useState([]);
 
 //-------------------------------------------------------------------------------------------   
-const performApiCall = async () => {
+const getNewAlbums = async () => {
 try{
 const response = await axios.get('https://qtify-backend-labs.crio.do/albums/top')
 // console.log(response.data);
@@ -21,7 +21,7 @@ console.log(error);
 useEffect(() => {
 
 const handlePageload = async () => {
-  const data =  await performApiCall();
+  const data =  await getNewAlbums();
 }
 
 handlePageload();
