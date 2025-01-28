@@ -5,10 +5,10 @@ import { Box, CardMedia, Chip, Typography } from "@mui/material";
 import styles from "./Card.module.css"
 
 
-const Albumcard = ({picture, follows, title}) => {
-  // console.log(picture + " " + follows + " " + title);
+const Albumcard = ({picture, follows, title, songs}) => {
+  console.log(picture + " " + follows + " " + title + " " + songs);
     return (
-      <div>
+      <div className={styles.container}>
         <div className={styles.wrapper}>
             <div className={styles.Card}>
               <img src={picture} style={{height:"100%", display:"block" , width:"100%" , borderTopLeftRadius:"10px", borderTopRightRadius:"10px"}}/>
