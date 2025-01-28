@@ -1,0 +1,26 @@
+
+.Card{
+    padding: 0px;
+border-radius: 10px;
+height: 205px;
+}
+
+.wrapper{
+    background-color: white;
+    height: 255px;
+    width: 159px;
+    border-radius: 10px;
+}
+
+
+
+.follows{
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 4px;
+}
+
+
+
+
+
