@@ -5,7 +5,7 @@ import Albumcard from "../Card/Card";
 import Carousel from "../Carousel/Carousel";
 
 const Section = ({title, albums}) => {
-    console.log(albums)
+    // console.log(albums)
 // const [topAlbums, setTopAlbums] = useState([]);
 const [carousel, setCorousel] = useState(true);
 const [buttonText, setButtonText] = useState("Show all");
@@ -65,7 +65,7 @@ const TopAlbumsGrid = () => {
             <Grid2 key={index.id}>
                 <Albumcard
                 picture={index.image}
-                follows={index.follows}
+                follows={index.follows + " Follows"}
                 title={index.title}
                 songs={index.songs.length}
                 />

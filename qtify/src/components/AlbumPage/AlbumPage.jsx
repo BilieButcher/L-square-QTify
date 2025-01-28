@@ -1,6 +1,7 @@
 import Section from "../Section/Section";
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
+import Songs from "../Songs/Songs";
 
 const AlbumPage = () => {
 const [topAlbums, setTopAlbums] = useState([]);
@@ -52,7 +53,7 @@ const getNewAlbums = async () => {
 // console.log(topAlbums)
 
     return (
-        <>
+        <div style={{borderBottom:"1px", borderColor:"#2a923a"}}>
         <Section
         title={"Top albums"}
         albums={topAlbums}
@@ -62,7 +63,11 @@ const getNewAlbums = async () => {
         title={"New albums"}
         albums={newAlbums}
         />
-        </>
+
+        <Songs/>
+
+
+        </div>
 
     );
 }

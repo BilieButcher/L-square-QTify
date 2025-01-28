@@ -13,7 +13,7 @@ const Albumcard = ({picture, follows, title, songs}) => {
         <div className={styles.wrapper}>
             <div className={styles.Card}>
               <img src={picture} style={{height:"100%", display:"block" , width:"100%" , borderTopLeftRadius:"10px", borderTopRightRadius:"10px"}}/>
-                <Chip className={styles.follows} label={`${follows} follows`} style={{color:"white", background:"black"}}/>
+                <Chip className={styles.follows} label={`${follows}`} style={{color:"white", background:"black"}}/>
             </div><br/>
             
         </div>
@@ -23,4 +23,22 @@ const Albumcard = ({picture, follows, title, songs}) => {
     );
 }
 
+const Songcard = ({picture, likes, title, songs}) => {
+  // console.log(picture + " " + follows + " " + title + " " + songs);
+    return (
+      <Tooltip title={`${songs} likes`} placement="top" arrow>
+      <div className={styles.container}>
+        <div className={styles.wrapper}>
+            <div className={styles.Card}>
+              <img src={picture} style={{height:"100%", display:"block" , width:"100%" , borderTopLeftRadius:"10px", borderTopRightRadius:"10px"}}/>
+                <Chip className={styles.follows} label={`${likes}`} style={{color:"white", background:"black"}}/>
+            </div><br/>
+            
+        </div>
+        <p style={{color:"white", margin:"2px"}}>{title}</p>
+    </div>
+    </Tooltip>
+    );
+}
+export {Songcard};
 export default Albumcard;
