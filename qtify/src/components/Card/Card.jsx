@@ -8,7 +8,7 @@ import styles from "./Card.module.css"
 const Albumcard = ({picture, follows, title, songs}) => {
   console.log(picture + " " + follows + " " + title + " " + songs);
     return (
-      <Tooltip title={`${songs?.length} songs`} placement="top" arrow>
+      <Tooltip title={`${songs} songs`} placement="top" arrow>
       <div className={styles.container}>
         <div className={styles.wrapper}>
             <div className={styles.Card}>

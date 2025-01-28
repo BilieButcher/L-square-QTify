@@ -49,7 +49,7 @@ handlePageload();
                         picture={index.image}
                         follows={index.follows}
                         title={index.title}
-                        songs={index.songs}
+                        songs={topAlbums.length}
                         />
                     </Grid2>
                 );
