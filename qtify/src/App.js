@@ -4,14 +4,14 @@ import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import { BrowserRouter } from 'react-router-dom';
 
-import Section from './components/Section/Section';
+import AlbumPage from './components/AlbumPage/AlbumPage'
 
 function App() {
   return (
     <BrowserRouter>
     <Navbar/>
     <Hero/>
-    <Section/>
+    <AlbumPage/>
     </BrowserRouter>
   );
 }
